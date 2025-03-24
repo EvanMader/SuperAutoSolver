@@ -1,0 +1,667 @@
+{
+  "Pets": [
+    [
+      {
+        "id": 1,
+        "name": "Duck",
+        "attack": 2,
+        "health": 3,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "SELL"
+      },
+      {
+        "id": 2,
+        "name": "Beaver",
+        "attack": 3,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "SELL"
+      },
+      {
+        "id": 3,
+        "name": "Pigeon",
+        "attack": 3,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "SELL"
+      },
+      {
+        "id": 4,
+        "name": "Otter",
+        "attack": 1,
+        "health": 3,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "BUY"
+      },
+      {
+        "id": 5,
+        "name": "Pig",
+        "attack": 4,
+        "health": 1,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "SELL"
+      },
+      {
+        "id": 6,
+        "name": "Ant",
+        "attack": 2,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FAINT"
+      },
+      {
+        "id": 7,
+        "name": "Mosquito",
+        "attack": 2,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "STARTOFBATTLE"
+      },
+      {
+        "id": 8,
+        "name": "Fish",
+        "attack": 2,
+        "health": 3,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "LEVELUP"
+      },
+      {
+        "id": 9,
+        "name": "Cricket",
+        "attack": 1,
+        "health": 3,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FAINT"
+      },
+      {
+        "id": 10,
+        "name": "Horse",
+        "attack": 2,
+        "health": 1,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FRIENDSUMMONED"
+      }
+    ],
+    [
+      {
+        "id": 11,
+        "name": "Snail",
+        "attack": 2,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "ENDTURN"
+      },
+      {
+        "id": 12,
+        "name": "Crab",
+        "attack": 4,
+        "health": 1,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "STARTOFBATTLE"
+      },
+      {
+        "id": 13,
+        "name": "Swan",
+        "attack": 1,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "STARTOFTURN"
+      },
+      {
+        "id": 14,
+        "name": "Rat",
+        "attack": 3,
+        "health": 6,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FAINT"
+      },
+      {
+        "id": 15,
+        "name": "Hedgehog",
+        "attack": 4,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FAINT"
+      },
+      {
+        "id": 16,
+        "name": "Peacock",
+        "attack": 2,
+        "health": 5,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "HURT"
+      },
+      {
+        "id": 17,
+        "name": "Flamingo",
+        "attack": 3,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FAINT"
+      },
+      {
+        "id": 18,
+        "name": "Worm",
+        "attack": 1,
+        "health": 3,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "STARTOFTURN"
+      },
+      {
+        "id": 19,
+        "name": "Kangaroo",
+        "attack": 2,
+        "health": 3,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FRIENDAHEADATTACKS"
+      },
+      {
+        "id": 20,
+        "name": "Spider",
+        "attack": 2,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FAINT"
+      }
+    ],
+    [
+      {
+        "id": 21,
+        "name": "Dodo",
+        "attack": 3,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "STARTOFBATTLE"
+      },
+      {
+        "id": 22,
+        "name": "Badger",
+        "attack": 6,
+        "health": 3,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FAINT"
+      },
+      {
+        "id": 23,
+        "name": "Dolphin",
+        "attack": 4,
+        "health": 3,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "STARTOFBATTLE"
+      },
+      {
+        "id": 24,
+        "name": "Giraffe",
+        "attack": 1,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "STARTOFTURN"
+      },
+      {
+        "id": 25,
+        "name": "Elephant",
+        "attack": 3,
+        "health": 7,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "AFTERATTACK"
+      },
+      {
+        "id": 26,
+        "name": "Camel",
+        "attack": 3,
+        "health": 4,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "HURT"
+      },
+      {
+        "id": 27,
+        "name": "Rabbit",
+        "attack": 1,
+        "health": 2,
+        "cost": 3,
+        "triggers": 4,
+        "abilityType": "FRIENDATEFOOD"
+      },
+      {
+        "id": 28,
+        "name": "Ox",
+        "attack": 1,
+        "health": 3,
+        "cost": 3,
+        "triggers": 1,
+        "abilityType": "FRIENDAHEADFAINTS"
+      },
+      {
+        "id": 29,
+        "name": "Dog",
+        "attack": 3,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FRIENDSUMMONED"
+      },
+      {
+        "id": 30,
+        "name": "Sheep",
+        "attack": 2,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FAINT"
+      }
+    ],
+    [
+      {
+        "id": 31,
+        "name": "Skunk",
+        "attack": 3,
+        "health": 5,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "STARTOFBATTLE"
+      },
+      {
+        "id": 32,
+        "name": "Hippo",
+        "attack": 4,
+        "health": 6,
+        "cost": 3,
+        "triggers": 3,
+        "abilityType": "KNOCKOUT"
+      },
+      {
+        "id": 33,
+        "name": "Bison",
+        "attack": 4,
+        "health": 4,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "ENDTURN"
+      },
+      {
+        "id": 34,
+        "name": "Blowfish",
+        "attack": 3,
+        "health": 6,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "HURT"
+      },
+      {
+        "id": 35,
+        "name": "Turtle",
+        "attack": 2,
+        "health": 5,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FAINT"
+      },
+      {
+        "id": 36,
+        "name": "Squirrel",
+        "attack": 2,
+        "health": 5,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "STARTOFTURN"
+      },
+      {
+        "id": 37,
+        "name": "Penguin",
+        "attack": 1,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "ENDTURN"
+      },
+      {
+        "id": 38,
+        "name": "Deer",
+        "attack": 2,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FAINT"
+      },
+      {
+        "id": 39,
+        "name": "Whale",
+        "attack": 3,
+        "health": 7,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "STARTOFBATTLE"
+      },
+      {
+        "id": 40,
+        "name": "Parrot",
+        "attack": 4,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "NONE"
+      }
+    ],
+    [
+      {
+        "id": 41,
+        "name": "Scorpion",
+        "attack": 1,
+        "health": 1,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "SUMMONED"
+      },
+      {
+        "id": 42,
+        "name": "Crocodile",
+        "attack": 8,
+        "health": 4,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "STARTOFBATTLE"
+      },
+      {
+        "id": 43,
+        "name": "Rhino",
+        "attack": 6,
+        "health": 7,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "BEFOREATTACK"
+      },
+      {
+        "id": 44,
+        "name": "Monkey",
+        "attack": 1,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "ENDTURN"
+      },
+      {
+        "id": 45,
+        "name": "Armadillo",
+        "attack": 2,
+        "health": 10,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "STARTOFBATTLE"
+      },
+      {
+        "id": 46,
+        "name": "Cow",
+        "attack": 4,
+        "health": 6,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "BUY"
+      },
+      {
+        "id": 47,
+        "name": "Seal",
+        "attack": 3,
+        "health": 8,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "EATSFOOD"
+      },
+      {
+        "id": 48,
+        "name": "Rooster",
+        "attack": 6,
+        "health": 4,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FAINT"
+      },
+      {
+        "id": 49,
+        "name": "Shark",
+        "attack": 2,
+        "health": 2,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FRIENDFAINTS"
+      },
+      {
+        "id": 50,
+        "name": "Turkey",
+        "attack": 3,
+        "health": 4,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FRIENDSUMMONED"
+      }
+    ],
+    [
+      {
+        "id": 51,
+        "name": "Leopard",
+        "attack": 10,
+        "health": 4,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "STARTOFBATTLE"
+      },
+      {
+        "id": 52,
+        "name": "Boar",
+        "attack": 10,
+        "health": 6,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "BEFOREATTACK"
+      },
+      {
+        "id": 53,
+        "name": "Tiger",
+        "attack": 6,
+        "health": 4,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FRIENDAHEADABILITY"
+      },
+      {
+        "id": 54,
+        "name": "Wolverine",
+        "attack": 5,
+        "health": 7,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FOURFRIENDSHURT"
+      },
+      {
+        "id": 55,
+        "name": "Gorilla",
+        "attack": 7,
+        "health": 10,
+        "cost": 3,
+        "triggers": 1,
+        "abilityType": "HURT"
+      },
+      {
+        "id": 56,
+        "name": "Dragon",
+        "attack": 3,
+        "health": 8,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FRIENDBOUGHT"
+      },
+      {
+        "id": 57,
+        "name": "Mammoth",
+        "attack": 4,
+        "health": 12,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FAINT"
+      },
+      {
+        "id": 58,
+        "name": "Cat",
+        "attack": 4,
+        "health": 5,
+        "cost": 3,
+        "triggers": 2,
+        "abilityType": "FOODBOUGHT"
+      },
+      {
+        "id": 59,
+        "name": "Snake",
+        "attack": 8,
+        "health": 3,
+        "cost": 3,
+        "triggers": -1,
+        "abilityType": "FRIENDAHEADATTACKS"
+      },
+      {
+        "id": 60,
+        "name": "Fly",
+        "attack": 4,
+        "health": 4,
+        "cost": 3,
+        "triggers": 3,
+        "abilityType": "SELL"
+      }
+    ]
+  ],
+
+  "Foods": [
+    [
+      { 
+        "id": 1,
+        "name": "Apple",
+        "cost": 3,
+        "perk": false
+      },
+      { 
+        "id": 2,
+        "name": "Honey",
+        "cost": 3,
+        "perk": true
+      }
+    ],
+    [
+      { 
+        "id": 3,
+        "name": "Pill",
+        "cost": 1,
+        "perk": false
+      },
+      { 
+        "id": 4,
+        "name": "Meat Bone",
+        "cost": 3,
+        "perk": true
+      },
+      { 
+        "id": 5,
+        "name": "Cupcake",
+        "cost": 3,
+        "perk": false
+      }
+    ],
+    [
+      { 
+        "id": 6,
+        "name": "Salad Bowl",
+        "cost": 3,
+        "perk": false
+      },
+      { 
+        "id": 7,
+        "name": "Garlic",
+        "cost": 3,
+        "perk": true
+      }
+    ],
+    [
+      { 
+        "id": 8,
+        "name": "Canned Food",
+        "cost": 3,
+        "perk": false
+      },
+      { 
+        "id": 9,
+        "name": "Pear",
+        "cost": 3,
+        "perk": false
+      }
+    ],
+    [
+      { 
+        "id": 10,
+        "name": "Chili",
+        "cost": 3,
+        "perk": true
+      },
+      { 
+        "id": 11,
+        "name": "Chocolate",
+        "cost": 3,
+        "perk": false
+      },
+      { 
+        "id": 12,
+        "name": "Sushi",
+        "cost": 3,
+        "perk": false
+      }
+    ],
+    [
+      { 
+        "id": 13,
+        "name": "Steak",
+        "cost": 3,
+        "perk": true
+      },
+      { 
+        "id": 14,
+        "name": "Melon",
+        "cost": 3,
+        "perk": true
+      },
+      { 
+        "id": 15,
+        "name": "Mushroom",
+        "cost": 3,
+        "perk": true
+      },
+      { 
+        "id": 16,
+        "name": "Pizza",
+        "cost": 3,
+        "perk": false
+      }
+    ]
+  ]
+}

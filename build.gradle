@@ -1,0 +1,26 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.json:json:20240303'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/SuperAutoSolver']
+        }
+        resources {
+            srcDirs = ['src/resources']
+        }
+    }
+}
+
+application {
+    mainClass = 'Game'
+}
