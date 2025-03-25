@@ -1,8 +1,8 @@
 public class Player {
-    public int gold;
-    public int health;
-    public Team team;
-    public Shop shop;
+    private int gold;
+    private int health;
+    private Team team;
+    private Shop shop;
 
     public Player() {
         this.gold = 10;

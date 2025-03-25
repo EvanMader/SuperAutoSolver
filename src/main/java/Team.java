@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Team {
-    public ArrayList<Pet> board;
+    private ArrayList<Pet> board;
 
     public Team() {
     } 
