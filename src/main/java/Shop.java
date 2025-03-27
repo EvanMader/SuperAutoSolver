@@ -55,6 +55,11 @@ public class Shop {
     public void increaseShopStats(int attack, int health) {
         this.extraAttack += attack;
         this.extraHealth += health;
+
+        for (ShopPet shopPet : this.pets) {
+            shopPet.pet.increaseAttack(attack);
+            shopPet.pet.increaseHealth(health);
+        }
     }
 
     public Pet buyShopPet(int index) {
@@ -73,5 +78,11 @@ public class Shop {
 
         Food food = this.foods.remove(index).food;
         return food;
+    }
+
+    public void tierUp() {
+        if (this.pets.size() == 0) {
+            return;
+        }
     }
 }

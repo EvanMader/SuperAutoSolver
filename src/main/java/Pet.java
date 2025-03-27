@@ -3,6 +3,7 @@ public class Pet {
     private String name;
     private int attack;
     private int health;
+    private int experience;
     private int cost;
     private int triggers;
     private AbilityType abilityType;
@@ -65,5 +66,31 @@ public class Pet {
 
     public Food getPerk() {
         return perk;
+    }
+
+    public void hurt(int damage) {
+        this.health -= damage;
+    }
+
+    public int getId() {
+        return id;
+    }   
+
+    public int getExperience() {
+        return experience;
+    }
+
+    public boolean combine(Pet pet) {
+        this.attack = Math.max(this.attack, pet.getAttack());
+        this.health = Math.max(this.health, pet.getHealth());
+        this.attack += 1;
+        this.health += 1;
+        if (this.experience < 3 || pet.getExperience() < 3 && this.experience + pet.getExperience() >= 3) {
+            this.experience += pet.experience;
+            return true;
+        }
+
+        this.experience += pet.experience;
+        return false;
     }
 }
