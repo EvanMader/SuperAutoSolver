@@ -15,6 +15,15 @@ public class Food {
         return name;
     }
 
+    public static Food copy(Food food) {
+        return new Food(
+            food.id,
+            food.name,
+            food.cost,
+            food.perk
+        );
+    }
+
     public boolean isPerk() {
         return perk;
     }

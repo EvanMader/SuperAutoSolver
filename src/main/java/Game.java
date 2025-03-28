@@ -17,25 +17,12 @@ public class Game {
     }
 
     public void startGame() {
-        player1 = new Player();
-        player2 = new Player();
-        round = 1;
 
         this.pets = getPets();
         this.foods = getFoods();
-
-        for (Pet[] petTier : this.pets) {
-            System.out.println();
-            for (Pet pet : petTier) {
-                System.out.println(pet);
-            }
-        }
-        for (Food[] foodTier : this.foods) {
-            System.out.println();
-            for (Food food : foodTier) {
-                System.out.println(food);
-            }
-        }
+        player1 = new Player(this.pets, this.foods);
+        player2 = new Player(this.pets, this.foods);
+        round = 1;
     }
 
     private String readJsonFromFile() {

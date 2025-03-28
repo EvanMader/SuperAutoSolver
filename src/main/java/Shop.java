@@ -8,15 +8,19 @@ public class Shop {
     private ArrayList<ShopFood> foods;
     private int extraAttack;
     private int extraHealth;
+    public Pet[][] petList;
+    public Food[][] foodList;
 
-    public Shop() {
+    public Shop(Pet[][] petList, Food[][] foodList) {
         this.pets = new ArrayList<>();
         this.foods = new ArrayList<>();
         this.extraAttack = 0;
         this.extraHealth = 0;
+        this.petList = petList;
+        this.foodList = foodList;
     }
 
-    public void roll(int turn, Pet[][] petList, Food[][] foodList) {
+    public void roll(int turn) {
         this.clearShop();
 
         int shopTier = Math.min(turn/2 - 1, 6);
@@ -25,7 +29,7 @@ public class Shop {
 
         for (int i = 0; i < numPets; i++) {
             int randomIndex = (int) (Math.random() * (shopTier * 10));
-            Pet randomPet = petList[randomIndex / 10][randomIndex % 10];
+            Pet randomPet = Pet.copy(this.petList[randomIndex / 10][randomIndex % 10]);
             randomPet.increaseAttack(this.extraAttack); 
             randomPet.increaseHealth(this.extraHealth); 
             this.pets.add(new ShopPet(randomPet, false));
@@ -33,7 +37,7 @@ public class Shop {
 
         for (int i = 0; i < numFoods; i++) {
             int randomIndex = (int) (Math.random() * (shopTier * 10));
-            Food randomFood = foodList[randomIndex / 10][randomIndex % 10];
+            Food randomFood = Food.copy(this.foodList[randomIndex / 10][randomIndex % 10]);
             this.foods.add(new ShopFood(randomFood, false));
         }
     }
@@ -80,9 +84,32 @@ public class Shop {
         return food;
     }
 
-    public void tierUp() {
-        if (this.pets.size() == 0) {
-            return;
+    public void tierUp(Pet[] tierUpPets) {
+        for (int i = 0; i < 2; i++) {
+            int randomIndex = (int) (Math.random() * tierUpPets.length);
+            Pet newPet = Pet.copy(tierUpPets[randomIndex]);
+            newPet.increaseAttack(this.extraAttack);
+            newPet.increaseHealth(this.extraHealth);
+            this.pets.add(new ShopPet(newPet, false));
+
+            if (!this.shopOverFull()) break;
+            for (int j = this.foods.size() - 1; j >= 0; j--) {
+                if (this.foods.get(j).frozen) continue;
+                this.foods.remove(j);
+                break;
+            }
+            
+            if (!this.shopOverFull()) break;
+            for (int j = this.pets.size() - 1; j >= 0; j--) {
+                if (this.pets.get(j).frozen) continue;
+                this.pets.remove(j);
+                break;
+            }
         }
+    }
+
+    private boolean shopOverFull() {
+        if (this.pets.size() + this.foods.size() > 9) return true;
+        return false;
     }
 }

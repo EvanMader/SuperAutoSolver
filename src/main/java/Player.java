@@ -4,10 +4,10 @@ public class Player {
     private Team team;
     private Shop shop;
 
-    public Player() {
+    public Player(Pet[][] pets, Food[][] foods) {
         this.gold = 10;
         this.health = 6;
         this.team = new Team();
-        this.shop = new Shop();
+        this.shop = new Shop(pets, foods);
     }
 }

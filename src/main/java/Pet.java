@@ -28,6 +28,18 @@ public class Pet {
         return name;
     }
 
+    public static Pet copy(Pet pet) {
+        return new Pet(
+            pet.id,
+            pet.name,
+            pet.attack,
+            pet.health,
+            pet.cost,
+            pet.triggers,
+            pet.abilityType
+        );
+    }
+
     public void consumeFood(Food food) {
         if (food.isPerk()) {
             this.perk = food;
